@@ -3,6 +3,7 @@ html {
 }
 body {
   min-height: 100%;
+  display: grid;
 }
 
 .wrapper {
@@ -11,7 +12,7 @@ body {
 
 header,
 footer {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
@@ -34,6 +35,8 @@ section {
 nav,
 aside {
   background-color: #6d676e;
+  padding-top: 2vh;
+  padding-left: 2vh;
 }
 
 /* big screen */
@@ -43,12 +46,22 @@ aside {
     grid-template-columns: 150px 1fr 150px;
     grid-template-rows: 75px 1fr 75px;
     grid-template-areas: 'header header header' 'nav section aside' 'footer footer footer';
+    min-height: 100%;
   }
+  body {
+    display: grid;
+    min-height: 100%;
+  }
+
   header {
     grid-area: header;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   footer {
     grid-area: footer;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
   nav {
     grid-area: nav;
@@ -63,5 +76,12 @@ aside {
   aside {
     padding-top: 2vh;
     padding-left: 2vh;
+  }
+
+  nav,
+  section,
+  aside {
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }
