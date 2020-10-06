@@ -31,13 +31,14 @@ body {
   background-color: skyblue;
 }
 
-.float-article {
+.float-section {
   background-color: steelblue;
   height: calc(100vh - 320px);
+  padding: 20px;
 }
 
-.float-article h1,
-.float-article p {
+.float-section h1,
+.float-section p {
   text-align: left;
   padding-left: 1rem;
 }
@@ -51,11 +52,13 @@ body {
   float: left;
   width: 100%;
   height: 50px;
+  position: absolute;
+  bottom: 0;
 }
 
 .float-header,
 .float-nav,
-.float-article,
+.float-section,
 .float-aside,
 .float-footer {
   padding-top: 1rem;
@@ -90,14 +93,18 @@ body {
     margin-left: 1%;
   }
 
-  .float-article {
+  .float-section {
     width: 62%;
     margin-top: 1%;
+  }
+  .float-footer {
+    position: absolute;
+    bottom: 0;
   }
 
   .float-nav,
   .float-aside,
-  .float-article {
+  .float-section {
     float: left;
     padding: 1%;
     height: calc(100vh - 200px);

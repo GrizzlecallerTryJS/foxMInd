@@ -8,7 +8,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 75px 75px 1fr 75px 75px;
+  grid-template-rows: auto auto 1fr auto auto;
 }
 
 header,
@@ -44,8 +44,8 @@ aside {
 
 @media screen and (min-width: 600px) {
   .wrapper {
-    grid-template-columns: 150px 1fr 150px;
-    grid-template-rows: 75px 1fr 75px;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 'header header header' 'nav section aside' 'footer footer footer';
     min-height: 100vh;
   }

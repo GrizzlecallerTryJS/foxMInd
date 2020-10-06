@@ -1,23 +1,26 @@
-* {
-}
-
 html {
   height: 100%;
 }
-body {
-  min-height: 100%;
-}
 
 body {
+  min-height: 100%;
   font-size: 24px;
   color: white;
   display: flex;
   flex-direction: column;
 }
 
+.flex-header,
+.flex-nav,
+.flex-aside,
+.flex-footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
 .flex-header {
   background-color: tomato;
-  text-align: center;
 }
 
 .flex-main {
@@ -29,9 +32,10 @@ body {
   background-color: skyblue;
 }
 
-.flex-article {
+.flex-section {
   background-color: steelblue;
   flex: 3 3;
+  padding: 20px;
 }
 
 .flex-aside {
@@ -40,9 +44,6 @@ body {
 
 .flex-footer {
   background-color: slateblue;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  text-align: center;
 }
 
 @media all and (max-width: 700px) {
