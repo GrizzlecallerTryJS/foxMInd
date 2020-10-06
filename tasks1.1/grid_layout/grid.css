@@ -12,6 +12,8 @@ body {
 }
 
 header,
+nav,
+aside,
 footer {
   display: grid;
   justify-content: center;
@@ -30,7 +32,6 @@ section {
   color: #1b1b1e;
   background-color: #f5f5f5;
   line-height: 1.5;
-  padding: 20px;
 }
 
 nav,
@@ -38,6 +39,14 @@ aside {
   background-color: #6d676e;
   padding-top: 2vh;
   padding-left: 2vh;
+}
+
+header,
+footer,
+section,
+nav,
+aside {
+  padding: 20px;
 }
 
 /* big screen */
@@ -85,5 +94,6 @@ aside {
   aside {
     padding-top: 2vh;
     padding-left: 2vh;
+    align-items: baseline;
   }
 }
