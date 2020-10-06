@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  font-size: 24px;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.float-header {
+  background-color: tomato;
+}
+
+.float-main {
+  display: block;
+  min-height: calc(100vh - 200px);
+}
+
+.float-nav {
+  background-color: skyblue;
+}
+
+.float-section {
+  background-color: steelblue;
+  height: calc(100vh - 320px);
+  padding: 20px;
+}
+
+.float-section h1,
+.float-section p {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.float-aside {
+  background-color: thistle;
+}
+
+.float-footer {
+  background-color: slateblue;
+  float: left;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+.float-header,
+.float-nav,
+.float-section,
+.float-aside,
+.float-footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.float-header,
+.float-nav,
+.float-aside,
+.float-footer {
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .float-main {
+    display: block;
+    min-height: calc(100vh - 200px);
+  }
+
+  .float-nav,
+  .float-aside {
+    width: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .float-nav {
+    margin-right: 1%;
+  }
+
+  .float-aside {
+    margin-left: 1%;
+  }
+
+  .float-section {
+    width: 62%;
+    margin-top: 1%;
+  }
+  .float-footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .float-nav,
+  .float-aside,
+  .float-section {
+    float: left;
+    padding: 1%;
+    height: calc(100vh - 200px);
+    text-align: center;
+  }
+}
