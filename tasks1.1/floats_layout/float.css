@@ -34,12 +34,12 @@ body {
   background-color: skyblue;
 }
 
-.float-article {
+.float-section {
   background-color: steelblue;
 }
 
-.float-article h1,
-.float-article p {
+.float-section h1,
+.float-section p {
   text-align: left;
   padding-left: 1rem;
 }
@@ -58,7 +58,7 @@ body {
 
 .float-header,
 .float-nav,
-.float-article,
+.float-section,
 .float-aside,
 .float-footer {
   padding-top: 1rem;
@@ -93,14 +93,14 @@ body {
     margin-left: 1%;
   }
 
-  .float-article {
+  .float-section {
     width: 62%;
     margin-top: 1%;
   }
 
   .float-nav,
   .float-aside,
-  .float-article {
+  .float-section {
     float: left;
     padding: 1%;
     height: 600px;
